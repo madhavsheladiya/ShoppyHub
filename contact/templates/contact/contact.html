@@ -1,0 +1,47 @@
+{% extends 'about/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+
+
+
+
+<div class="bg-light">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+          <br>
+        <h1 class="display-4">Contact us</h1>
+        <p class="lead text-muted mb-0">
+
+        </p>
+
+      </div>
+
+  </div>
+</div>
+
+     <p style="float:right; margin:-100px 0px 0px 0px">
+        <img src="/static/img/cover.jpg" >
+    </p>
+
+<div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <form action="." method="post">
+           {% csrf_token %}
+          {{ form.as_p }}
+
+          <input type="submit" class="btn btn-primary">
+
+      </form></div></div></div></div>
+<footer class="bg-light pb-5">
+  <div class="container text-center">
+    <p class="font-italic text-muted mb-0">&copy; Copyrights ShoppyHub.com All rights reserved.</p>
+  </div>
+</footer>
+
+
+{% endblock %}
+

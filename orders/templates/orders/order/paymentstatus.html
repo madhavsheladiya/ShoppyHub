@@ -1,0 +1,29 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+{% block title%}Shoppy hub{% endblock %}
+{% block content %}
+{% csrf_token %}
+<div class="container">
+
+    <div class="col my-4">
+
+        <h1>Payment status regarding your order Id : {{response.ORDERID}}</h1>
+        {% if response.RESPCODE == '01' %}
+        <h3>Amount paid:{{response.TXNAMOUNT}} </h3>
+        <h3><img style="height:50px;"src="/static/img/success.png" >Your order has been received successfully</h3 >
+
+        <h3>Thank you for your purchase! </h3>
+        {% else %}
+        <h2> <img style="height:50px;"src="/static/img/fail.jpg" >Your order has been failed</h2 >
+        {% endif%}
+
+    </div>
+
+</div>
+{% endblock %}
+{% block js %}
+<script>
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,80 @@
+<html>
+<head>
+
+    <style type="text/css">
+
+        #slider{
+            overflow: hidden;
+            height:1500px;
+              width:4500px;
+
+       }
+
+       #slider figure{
+              position: relative;
+              width: 500%;
+              margin: 0;
+              left:0;
+              animation: 20s slider infinite;
+       }
+
+       #slider figure img{
+              height:1500px;
+              width:4500px;
+              float: left;
+              background-size:cover;
+       }
+
+       @keyframes slider{
+       0%{
+            left: 0;
+       }
+       20%{
+            left: 0;
+       }
+       25%{
+             left: -100%;
+       }
+       45%{
+             left: -100%;
+       }
+       50%{
+              left: -200%;
+       }
+       70%{
+               left: -200%;
+       }
+       75%{
+                left: -300%;
+       }
+       95%{
+                 left: -300%;
+       }
+       100%{
+                 left: -400%;
+       }
+       }
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <figure>
+            <img src="img/acer.jpg">
+            <img src="img/fashion.jpg">
+            <img src="img/pav1.jpg">
+             <img src="img/noise-x3-banner.png">
+            <img src="img/banner_nike.jpg">
+            <img src="img/canon.jpg">
+            <img src="img/backpack.png">
+            <img src="img/jbl.png">
+            <img src="img/galaxy-m30-banner.jpg">
+            <img src="img/noise-x3-banner.png">
+             <img src="img/MacBanner.jpg">
+            <img src="img/noise-x5-banner.png">
+            <img src="img/noise-x5-banner1.jpg">
+
+
+        </figure>
+    </div>
+</body>
+</html>

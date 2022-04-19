@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: mackk@gmail.com
+Date: Tue, 11 Feb 2020 13:19:25 -0000
+Message-ID: <158142716540.10796.7686225909674345030@LAPTOP-J9Q7274P.KSVV>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Ng/5dw-064cd75ed18afbf08752/
+
+Your username, in case you've forgotten: mackk
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

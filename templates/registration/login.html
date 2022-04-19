@@ -1,0 +1,18 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+{% block content %}
+<center>
+<img src="https://img.icons8.com/color/2x/gender-neutral-user.png">
+<h2>Login</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button type="submit" class="btn btn-primary">Login</button>
+
+</form>
+</center>
+{% endblock %}
+
